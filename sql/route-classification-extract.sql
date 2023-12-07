@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [SERVICE_RTE_NUM]
+      ,[SERVICE_CHANGE_NUM]
+
+      ,[SVC_FAMILY]
+    
+      ,[RTE_OPPORTUNITY_INDEX_SCORE]
+  FROM [DP].[ROUTE_CLASSIFICATION]
+  WHERE SERVICE_CHANGE_NUM = 223
